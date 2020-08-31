@@ -15,6 +15,6 @@ Pod::Spec.new do |s|
 
 
   s.ios.source_files = "ios/**/*.{h,m,mm,swift}"
-  s.source_files = "Libraries/swiftCoreNFC"
+  #s.source_files = "Libraries/swiftCoreNFC"
   s.dependency "React"
 end
