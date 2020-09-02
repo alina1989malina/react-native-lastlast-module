@@ -1,4 +1,5 @@
 import CoreNFC
+import PromiseKit
 
 @available(iOS 13.0, *)
 @objc(LastlastModule)

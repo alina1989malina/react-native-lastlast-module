@@ -14,7 +14,13 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/alina1989malina.git", :tag => "#{s.version}" }
 
 
+  s.source_files = 'Libraries/swiftCoreNFC'
   s.ios.source_files = "ios/**/*.{h,m,mm,swift}"
-  #s.source_files = "Libraries/swiftCoreNFC"
+  #s.ios.vendored_library = 'Libraries/swiftCoreNFC'
+
+  #s.ios.library = 'swiftCoreNFC'
+  #s.libraries = 'swiftCoreNFC'
+
   s.dependency "React"
-end
+  s.dependency "PromiseKit", "~> 6.8"
+  end
